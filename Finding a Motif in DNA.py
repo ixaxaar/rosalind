@@ -13,7 +13,12 @@ def main():
 	cur_pos = 0
 
 	while(1):
-		p = ns.dna.index(repeat) if repeat in ns.dna else None
+		try:
+			# index throws an exception when it does not find string :/
+			p = ns.dna.index(repeat)
+		except ValueError:
+			break
+
 		if p:
 			positions.append(p + cur_pos + 1) # 1 added for string numbering to start with 1
 			cur_pos += p + 1
