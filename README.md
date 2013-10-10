@@ -1,4 +1,4 @@
 rosalind
 ========
 
-My solutions for rosaling bioinformatics problems
+My solutions for rosalind bioinformatics problems rosalind.info
